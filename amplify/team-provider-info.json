@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-quicksightdashboarda-dev-203538-authRole",
+      "UnauthRoleArn": "arn:aws:iam::661234334835:role/amplify-quicksightdashboarda-dev-203538-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::661234334835:role/amplify-quicksightdashboarda-dev-203538-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-quicksightdashboarda-dev-203538-deployment",
+      "UnauthRoleName": "amplify-quicksightdashboarda-dev-203538-unauthRole",
+      "StackName": "amplify-quicksightdashboarda-dev-203538",
+      "StackId": "arn:aws:cloudformation:eu-central-1:661234334835:stack/amplify-quicksightdashboarda-dev-203538/d6ff4560-78ed-11ee-a054-0658d296e609",
+      "AmplifyAppId": "d3rz8s2m3k03p9"
+    },
+    "categories": {
+      "auth": {
+        "quicksightdashboarda786ef821": {}
+      },
+      "hosting": {
+        "S3AndCloudFront": {}
+      }
+    }
+  }
+}

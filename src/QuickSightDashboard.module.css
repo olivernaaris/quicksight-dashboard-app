@@ -1,0 +1,21 @@
+/* src/QuickSightDashboard.module.css */
+
+.dashboardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use full height of the viewport */
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey background */
+  }
+  
+  .iframeStyle {
+    width: 100%; /* Responsive width */
+    height: 100%; /* Responsive height */
+    max-width: 960px; /* Max width of the iframe */
+    max-height: 720px; /* Max height of the iframe */
+    border: none; /* Remove default iframe border */
+    border-radius: 10px; /* Rounded corners for the iframe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  

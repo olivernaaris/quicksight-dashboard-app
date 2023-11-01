@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Amplify, Auth } from 'aws-amplify';
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+import awsconfig from './aws-exports';
+import QuickSightDashboard from './QuickSightDashboard'; // Import QuickSightDashboard
 
-function App() {
+Amplify.configure(awsconfig);
+
+function App({ signOut, user }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Hello {user.username}</h1>
+      <button onClick={signOut}>Sign out</button>
+      <QuickSightDashboard /> {/* Render QuickSightDashboard here */}
+    </>
   );
 }
 
-export default App;
+export default withAuthenticator(App);
